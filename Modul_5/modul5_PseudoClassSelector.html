@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pseudo Selector Example</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        /* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+        a:link {
+            color: red;
+        }
+
+        /* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+        a:visited {
+            color: green;
+        }
+
+        /* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+        a:hover {
+            color: pink;
+        }
+
+        /* rule akan diterapkan pada sebuah tautan ketika ditekan */
+        a:active {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.com/">Kunjungi Halaman Google</a>
+</body>
+
+</html>
